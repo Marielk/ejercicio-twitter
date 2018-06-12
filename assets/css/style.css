@@ -39,3 +39,14 @@ textarea {
   background-color: blue; 
   margin-left: 7em;
 }
+
+#contador {
+  background-color: #0000ff00;
+  margin-left: 80%;
+  color: #0600ff;
+  font-size: 22px;
+  border-width: 0px;
+  border-style: none;
+  border-color: none;
+  border-image: none;
+}

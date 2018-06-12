@@ -1,19 +1,23 @@
-/*
-let camposValidos = document.getElementById('userComment').value;
-const botonTweet = document.getElementById('tweetButton');
-if (camposValidos === 0 || camposValidos === null) {
-  botontweet.disabled = true;
-}
-else {
-  botonTweet.disabled = false;
-} */
+
 
 const button = document.getElementById('tweetButton');
 button.disabled = true;
-let userText = document.getElementById('userComment').value;
-if (userText.length != 0 || userText != null) {
+let userTextInput = document.getElementById('userComment');
+userTextInput.addEventListener ( 'keypress', () => {
   button.disabled = false;
-} else { button.disabled = true; }
+})
+let userTextInput2 = document.getElementById('userComment');
+userTextInput2.addEventListener ('keypress', () => {
+  const max = "150"; 
+  let cadena = document.getElementById("userComment").value; 
+  let longitud = cadena.length; 
+    if(longitud <= max) { 
+      document.getElementById("contador").value = max-longitud; 
+    } else { 
+      document.getElementById("userComment").value = cadena.substr(0, max);
+    } 
+
+})
 
 button.addEventListener('click', () => {
   let userText = document.getElementById('userComment').value;
@@ -31,12 +35,5 @@ button.addEventListener('click', () => {
   showCommentDiv.appendChild(newComments); 
 
 })
-/*
-boton.disabled = false;
-    else boton.disabled = true;
-    
-    if (userText.length === 0 || userText === null) {
-      alert('Debes ingresar un mensaje');
-      return false; 
-    } */ 
+
   
