@@ -8,15 +8,22 @@ userTextInput.addEventListener ( 'keypress', () => {
 })
 let userTextInput2 = document.getElementById('userComment');
 userTextInput2.addEventListener ('keypress', () => {
-  const max = "150"; 
+  const max = '140'; 
   let cadena = document.getElementById("userComment").value; 
   let longitud = cadena.length; 
     if(longitud <= max) { 
-      document.getElementById("contador").value = max-longitud; 
+      document.getElementById('contador').value = max-longitud; 
     } else { 
-      document.getElementById("userComment").value = cadena.substr(0, max);
+      document.getElementById('contador').value = -(longitud-max);
     } 
+})
 
+let texto = document.getElementById('userComment'); 
+
+texto.addEventListener ( 'keypress' , () => {
+  let cadena = document.getElementById("userComment").value; 
+  let longitud = cadena.length; 
+  if (longitud <= 140 && longitud >= 0 ) { button.disabled = false; } else { button.disabled = true; }
 })
 
 button.addEventListener('click', () => {
