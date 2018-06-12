@@ -26,6 +26,15 @@ texto.addEventListener ( 'keypress' , () => {
   if (longitud <= 140 && longitud >= 0 ) { button.disabled = false; } else { button.disabled = true; }
 })
 
+const counter = document.getElementById('contador');
+texto.addEventListener ('keypress', () => {
+  let cadena = document.getElementById("userComment").value; 
+  let longitud = cadena.length; 
+  if (longitud >= 130) {counter.style.color = 'rgb(253, 0, 0)'; //rojo
+  } else if (longitud >= 120) {counter.style.color = 'rgb(255, 255, 0)'} //amarillo
+  else {counter.style.color = 'rgb(0, 153, 0)'} //verde
+})
+
 button.addEventListener('click', () => {
   let userText = document.getElementById('userComment').value;
   document.getElementById('userComment').value = ' '; 
