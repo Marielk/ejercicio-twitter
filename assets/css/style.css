@@ -1,0 +1,41 @@
+body {
+  margin: 0 auto;
+  
+}
+
+header {
+  height: 10%;
+  text-align: center;
+}
+
+#topBar {
+  background-color: #09a4ea;
+  color: antiquewhite; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#profileBox {
+  
+  background-color: blueviolet;
+  height: 30em;
+  margin: 2em;
+  margin-left: 6em;
+}
+
+#inputTextbox {
+  
+  background-color: aqua; 
+  height: 30em;
+  margin: 2em;
+}
+
+textarea {
+  background-color: antiquewhite;
+  height: 80%;
+  width: 98%;
+}
+
+#showComments {
+  background-color: blue; 
+  margin-left: 7em;
+}

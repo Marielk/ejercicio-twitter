@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twitter</title>
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--seccion header-->
+  <header>
+    <div class="col-12" id = "topBar"> 
+     <h1>Twitter</h1>
+    </div>
+  </header>
+  <!--fin seccion header-->
+  <!--Inicio seccion contenido-->
+  <div class = "col-12" id = "mainContent">
+   <!--inicio caja perfil --> 
+   <div class = "col-5" id = "profileBox">
+
+   </div>
+   <!--cierre caja perfil --> 
+   <!--inicio caja para escribir -->
+   <div class = "col-5" id = "inputTextbox">
+      <textarea class="txt" id="userComment" placeholder="Añade un comentario..."></textarea>
+      <button type="submit" id="tweetButton"> Tweet </button>
+   </div>
+   <!--cierre caja para escribir -->
+  </div>
+   <!--fin seccion contenido-->
+  <!-- inicio contenedor oculto de comentarios -->
+  <div class="row">
+    <div class="col-12" id="showComments"></div>
+  </div> 
+  <!-- cierre contenedor oculto de comentarios -->
+  <script src="js/main.js"></script>
+</body>
+</html>
